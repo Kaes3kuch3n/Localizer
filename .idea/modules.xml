@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/localizer.iml" filepath="$PROJECT_DIR$/.idea/modules/localizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/localizer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/localizer_main.iml" group="localizer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/localizer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/localizer_test.iml" group="localizer" />
+    </modules>
+  </component>
+</project>

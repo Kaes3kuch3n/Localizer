@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "play": "Play",
+    "options": "Options",
+    "quit": "Quit"
+  },
+  "options": {
+    "graphics": "Graphics",
+    "sound": "Sound",
+    "other": "Other"
+  }
+}

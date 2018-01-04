@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "play": "Spielen",
+    "options": "Optionen",
+    "quit":"Beenden"
+  },
+  "options": {
+    "graphics": "Grafik",
+    "sound": "Ton",
+    "other": "Sonstiges"
+  }
+}
