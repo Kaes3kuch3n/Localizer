@@ -111,7 +111,7 @@ public class LanguageLoader {
         Scanner s = new Scanner(new FileInputStream(langFilePath + locale + ".json"));
         StringBuilder sb = new StringBuilder("");
         while (s.hasNextLine()) {
-            sb.append(s.nextLine().replaceAll("\\n| ", ""));
+            sb.append(s.nextLine().replaceAll("\\n", ""));
         }
         return sb.toString();
     }
