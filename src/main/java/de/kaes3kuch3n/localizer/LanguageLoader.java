@@ -11,6 +11,8 @@ import java.util.Scanner;
 
 public class LanguageLoader {
 
+    private static final String PREFIX = "[Localizer]";
+
     private String langFilePath;
     private HashMap<String, String> languages;
     private Language language;
@@ -86,8 +88,8 @@ public class LanguageLoader {
             try {
                 loadLanguage(l.toString());
             } catch (FileNotFoundException e) {
-                System.out.println("No language file found for language " + l.toString() + "!\n" +
-                        "If you want to add support for this language, please add a laguage file called " +
+                System.out.println(PREFIX + "No language file found for language " + l.toString() + "!\n" +
+                        PREFIX + "If you want to add support for this language, please add a language file called " +
                         l.toString() + ".json to the languages folder.");
             }
         }
