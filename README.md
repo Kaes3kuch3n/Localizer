@@ -1,4 +1,4 @@
-# Localizer
+# Localizer [![Build Status](https://travis-ci.org/Kaes3kuch3n/Localizer.svg?branch=master)](https://travis-ci.org/Kaes3kuch3n/Localizer)
 This project provides a LanguageLoader class which is able to load .json files and provide localized Strings from it.
 
 ## Usage
