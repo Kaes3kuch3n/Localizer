@@ -86,8 +86,9 @@ public class LanguageLoader {
             try {
                 loadLanguage(l.toString());
             } catch (FileNotFoundException e) {
-                System.err.println("No language file found for language " + l.toString() + "!\n" +
-                        "Please add a laguage file called " + l.toString() + ".json to the languages folder.");
+                System.out.println("No language file found for language " + l.toString() + "!\n" +
+                        "If you want to add support for this language, please add a laguage file called " +
+                        l.toString() + ".json to the languages folder.");
             }
         }
     }
@@ -95,7 +96,7 @@ public class LanguageLoader {
     /**
      * Loads a JSON language String to the HashMap.
      * @param locale The language to load.
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException If the language file is missing.
      */
     private void loadLanguage(String locale) throws FileNotFoundException {
         languages.put(locale.split("\\.")[0], loadLanguageFile(locale));
@@ -105,11 +106,11 @@ public class LanguageLoader {
      * Loads the JSON language file as a String.
      * @param locale The language to load.
      * @return The language String.
-     * @throws FileNotFoundException
+     * @throws FileNotFoundException If the language file is missing.
      */
     private String loadLanguageFile(String locale) throws FileNotFoundException {
         Scanner s = new Scanner(new FileInputStream(langFilePath + locale + ".json"));
-        StringBuilder sb = new StringBuilder("");
+        StringBuilder sb = new StringBuilder();
         while (s.hasNextLine()) {
             sb.append(s.nextLine().replaceAll("\\n", ""));
         }
