@@ -1,4 +1,7 @@
-package de.kaes3kuch3n.localizer;
+package de.kaes3kuch3n;
+
+import de.kaes3kuch3n.localizer.Language;
+import de.kaes3kuch3n.localizer.LanguageLoader;
 
 public class Localizer {
 
