@@ -25,6 +25,8 @@ public class LanguageLoaderTest {
         assertEquals("Graphics", languageLoader.getLocalizedString("options.graphics"));
         assertEquals("Sound", languageLoader.getLocalizedString("options.sound"));
         assertEquals("Other", languageLoader.getLocalizedString("options.other"));
+
+        assertEquals("Path not found" , languageLoader.getLocalizedString("test.fail"));
     }
 
     @Test
