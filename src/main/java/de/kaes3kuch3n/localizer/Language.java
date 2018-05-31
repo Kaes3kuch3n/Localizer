@@ -1,7 +1,7 @@
 package de.kaes3kuch3n.localizer;
 
 public enum Language {
-    EN("en"), DE("de");
+    EN("en"), DE("de"), FR("fr");
 
     Language(String language) {
         this.language = language;
